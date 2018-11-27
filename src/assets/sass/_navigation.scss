@@ -1,0 +1,24 @@
+.navbar {
+  a {
+    font-family: Supercell-Magic;
+    font-size: 14px;
+  }
+  .nav-name {
+    font-family: Supercell-Magic;
+    font-size: 14px;
+    color: white;
+  }
+  .nav-link {
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: solid 2px #860F0F;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+    }
+
+  }
+}

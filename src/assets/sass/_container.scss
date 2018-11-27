@@ -1,0 +1,162 @@
+
+
+
+.intro {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #DBDBDB;
+  &::after {
+    content: '';
+    top: -65vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    width: 120vh;
+    background: #3E3E3E;
+    position: absolute;
+    transform: rotate(310deg);
+    border-radius: 50px;
+  }
+  .king {
+    position: absolute;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 3vh;
+    height: auto;
+    width: 80vh;
+  }
+  .builder {
+    position: absolute;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: -75vh;
+    margin-top: 3vh;
+    height: auto;
+    width: 90vh;
+    @media (max-width: 767px) {
+      position: absolute;
+      z-index: 2;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      margin-top: 10vh;
+      height: auto;
+      width: 80vh;
+    }
+  }
+  .logo {
+    position: absolute;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 95vh;
+    margin-top: 3vh;
+    height: auto;
+    width: 40vh;
+  }
+
+}
+
+.join {
+  height: 250vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #DBDBDB;
+
+  .builder-2 {
+    position: absolute;
+    z-index: 1;
+    top: -20vh;
+    left: 0;
+    height: auto;
+    width: 80vh;
+    @media (max-width: 767px) {
+      top: -10vh;
+      right: -30vh;
+      margin-left: auto;
+      margin-right: auto;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      -ms-filter: "FlipH";
+    }
+  }
+
+  &::after {
+    content: '';
+    top: 55vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: -90vh;
+    right: 0;
+    height: 150vh;
+    width: 150vh;
+    background: #3E3E3E;
+    position: absolute;
+    transform: rotate(310deg);
+    border-radius: 50px;
+    z-index: 0;
+    @media (max-width: 767px) {
+      top: 85vh;
+    }
+  }
+  h3, h5, p {
+    font-family: Supercell-Magic;
+  }
+  h5 {
+    color: #860F0F;
+  }
+  .with-box {
+
+  }
+  .prijimame {
+    color: white;
+    margin-top: 30vh;
+    @media (min-width: 1441px ) {
+      margin-top: 60vh;
+    }
+    h2 {
+      text-decoration: underline;
+    }
+    font-family: Supercell-Magic;
+    z-index: 3;
+    line-height: 2.2rem;
+    li {
+      font-size: 1.5rem;
+    }
+    .btn-link {
+        color: white;
+      &:hover {
+        color: #860F0F;
+      }
+    }
+    @media (max-width: 767px) {
+      margin-top: 60vh;
+      li {
+        font-size: 1em;
+        line-height: 1.5em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+
+    }
+
+  }
+  .builder-4 {
+    position: absolute;
+    z-index: 3;
+  }
+
+}
