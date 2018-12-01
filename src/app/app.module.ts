@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { IntroComponent } from './intro/intro.component';
+import {ScrollToModule} from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { IntroComponent } from './intro/intro.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    ScrollToModule.forRoot()
   ],
   providers: [
   ],

@@ -6,6 +6,29 @@
   position: relative;
   overflow: hidden;
   background-color: #DBDBDB;
+  @media (min-width: 768px) {
+    background: url("/assets/imgs/bg.jpg");
+    background-size:cover;
+  }
+
+  .over {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    @media (min-width: 768px) {
+      &:after{
+        content:'';
+        position:absolute;
+        left: -15vh; top:-15vh;
+        border-radius:100%;
+        width: 80vh; height: 80vh;
+        box-shadow: 0px 0px 0px 4000px #DBDBDB;
+      }
+    }
+
+  }
+
   &::after {
     content: '';
     top: -65vh;
@@ -37,7 +60,7 @@
     margin-left: auto;
     margin-right: auto;
     left: 0;
-    right: -75vh;
+    right: -60vh;
     margin-top: 3vh;
     height: auto;
     width: 90vh;
@@ -70,6 +93,33 @@
 .uc {
   background-color: #DBDBDB;
   overflow: hidden;
+  @media (min-width: 768px) {
+    background: url("/assets/imgs/bg-02.jpg");
+    background-size: cover;
+  }
+  .over-3 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    @media (min-width: 768px) {
+      &:after{
+        z-index: 0;
+        content:'';
+        position:absolute;
+        right: -15vh; top: -15vh;
+        border-radius:100%;
+        width: 90vh; height: 90vh;
+        box-shadow: 0px 0px 0px 4000px #DBDBDB;
+      }
+    }
+
+  }
+  .img-fluid {
+    position: relative;
+    z-index: 10;
+  }
+
   .box {
     background-color: #860F0F;
     border-radius: 30px;
@@ -98,15 +148,12 @@
 
   }
 
-  h3, h5, p {
-    font-family: Supercell-Magic;
-  }
   h5 {
     color: #860F0F;
   }
-  h3, p {
-    color: #DBDBDB;
-  }
+ p {
+   color: #DBDBDB;
+ }
 
   .builder-4 {
     position: absolute;
@@ -117,6 +164,34 @@
 .join {
   background-color: #DBDBDB;
   overflow: hidden;
+  @media (min-width: 768px) {
+    background: url("/assets/imgs/bg-02.jpg");
+    background-size: cover;
+  }
+
+  .over-2 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    @media (min-width: 768px) {
+      &:after{
+        z-index: 0;
+        content:'';
+        position:absolute;
+        left: -15vh; top: -15vh;
+        border-radius:100%;
+        width: 90vh; height: 90vh;
+        box-shadow: 0px 0px 0px 4000px #DBDBDB;
+      }
+    }
+
+  }
+  .img-fluid {
+   position: relative;
+    z-index: 10;
+  }
+
   .box {
     background-color: #860F0F;
     border-radius: 30px;
@@ -142,16 +217,12 @@
   }
 
 
-  h2, li, a {
-    font-family: Supercell-Magic;
-  }
   h5 {
     color: #860F0F;
   }
-  h2, li, a {
-    color: #DBDBDB;
-  }
+
   li {
+    color: #DBDBDB;
     &::before {
       content: "\f00c";
       font-family: FontAwesome;
@@ -162,6 +233,7 @@
   }
   .btn-link {
     text-decoration: none;
+    color: #DBDBDB;
     &:hover {
       color: #860F0F;
       text-decoration: none;
@@ -177,5 +249,153 @@
       transform: scaleX(1);
     }
   }
+
+}
+
+.rules {
+  background-color: #DBDBDB;
+  overflow: hidden;
+  @media (min-width: 1024px) {
+    background: url("/assets/imgs/bg-02.jpg") top right no-repeat;
+    background-size: contain;
+  }
+
+  .over-4 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    @media (min-width: 768px) {
+      &:after{
+        z-index: 0;
+        content:'';
+        position:absolute;
+        right: -15vh; top: -15vh;
+        border-radius:100%;
+        width: 90vh; height: 90vh;
+        box-shadow: 0px 0px 0px 4000px #DBDBDB;
+      }
+    }
+
+  }
+  .img-fluid {
+    position: relative;
+    z-index: 10;
+  }
+
+  h2, h3 {
+    color: #3E3E3E;
+    position: relative;
+    z-index: 10;
+  }
+
+  h5 {
+    color: white;
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: solid 2px #860F0F;
+      width: 60px;
+      padding-top: 5px;
+    }
+  }
+  p {
+    color: #DBDBDB;
+  }
+  .box-rules {
+    background: #3E3E3E;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    &:hover {
+      transition: 0.5s;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: -10px;
+      margin-top: -10px;
+      padding: 30px;
+    }
+  }
+
+
+}
+.discord {
+  background-color: #DBDBDB;
+  overflow: hidden;
+  h2, p {
+    color: #3E3E3E;
+  }
+  .kod {
+    color: #860F0F;
+  }
+}
+.youtube {
+  position: relative;
+  overflow: hidden;
+  background-color: #DBDBDB;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    background: url("/assets/imgs/bg-02.jpg") top right no-repeat;
+    background-size: cover;
+  }
+
+  .over-5 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    @media (min-width: 768px) {
+      &:after{
+        z-index: 0;
+        content:'';
+        position:absolute;
+        right: -15vh; top: -15vh;
+        border-radius:100%;
+        width: 90vh; height: 90vh;
+        box-shadow: 0px 0px 0px 4000px #DBDBDB;
+      }
+    }
+
+  }
+  .img-fluid {
+    position: relative;
+    z-index: 10;
+  }
+
+
+  h2 {
+    position: relative;
+    z-index: 10;
+    color: #860F0F;
+  }
+  p {
+    position: relative;
+    z-index: 10;
+    color: #3E3E3E;
+  }
+  .yt-box {
+    position: relative;
+    z-index: 10;
+    background-color: #3E3E3E;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  .img-ed {
+    position: relative;
+    z-index: 10;
+    width: 120%;
+    height: auto;
+    @media (min-width: 768px) {
+      margin-bottom: -30px;
+    }
+
+  }
+}
+.footer {
+  color: #DBDBDB;
+  background-color: #3E3E3E;
 
 }
