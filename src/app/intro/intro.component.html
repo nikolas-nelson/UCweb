@@ -94,7 +94,11 @@
           <div class="row">
 
             <div class="col-12 col-md-6 col-lg-4 mb-4" *ngFor="let rule of rules">
-              <div class="box-rules h-100 d-flex" >
+              <div class="box-rules h-100 d-flex"
+                   data-aos="fade-zoom-in"
+                   data-aos-easing="ease-in-back"
+                   data-aos-delay="300"
+                   data-aos-offset="0">
                 <div class="align-self-center">
                   <h5>{{rule.title}}</h5>
                   <p>{{rule.text}}</p>
@@ -103,132 +107,6 @@
               </div>
 
             </div>
-
-            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
-              <!--<div class="box-rules h-100 d-flex"-->
-                   <!--data-aos="fade-zoom-in"-->
-                   <!--data-aos-easing="ease-in-back"-->
-                   <!--data-aos-delay="300"-->
-                   <!--data-aos-offset="0">-->
-                <!--<div class="align-self-center">-->
-                  <!--<h5>Donate</h5>-->
-                  <!--<p>Poměr donate a received neřešíme, rádi naše členy podpoříme v růstu, takže si žádej co chceš. Jen-->
-                    <!--musíš-->
-                    <!--počítat s tím, že pokud zadáš určité jednotky, může se stát, že na ně budeš čekat déle. Pouhé-->
-                    <!--vyžírky-->
-                    <!--poznáme, o takové hráče nestojíme.</p>-->
-                <!--</div>-->
-
-              <!--</div>-->
-
-            <!--</div>-->
-            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
-              <!--<div class="box-rules h-100 d-flex"-->
-                   <!--data-aos="fade-zoom-in"-->
-                   <!--data-aos-easing="ease-in-back"-->
-                   <!--data-aos-delay="300"-->
-                   <!--data-aos-offset="0">-->
-                <!--<div class="align-self-center">-->
-                  <!--<h5>Clan War Request</h5>-->
-                  <!--<p>Do war zone patří jen jednotky s maximálním lvl. To samé do war rq.</p>-->
-                <!--</div>-->
-
-              <!--</div>-->
-
-            <!--</div>-->
-            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
-              <!--<div class="box-rules h-100 d-flex"-->
-                   <!--data-aos="fade-zoom-in"-->
-                   <!--data-aos-easing="ease-in-back"-->
-                   <!--data-aos-delay="300"-->
-                   <!--data-aos-offset="0">-->
-                <!--<div class="align-self-center">-->
-                  <!--<h5>War Base</h5>-->
-                  <!--<p>Pokud už budete kopírovat base z netu, upravte ji podle sebe. Nad každou se pozastavíme a-->
-                    <!--prodiskutujeme, jak ji ještě vylepšit. Samozřejmostí je pak zkouška v Challenges.</p>-->
-                <!--</div>-->
-
-              <!--</div>-->
-
-            <!--</div>-->
-
-            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
-              <!--<div class="box-rules  h-100 d-flex"-->
-                   <!--data-aos="fade-zoom-in"-->
-                   <!--data-aos-easing="ease-in-back"-->
-                   <!--data-aos-delay="300"-->
-                   <!--data-aos-offset="0">-->
-                <!--<div class="align-self-center">-->
-                  <!--<h5>War strategie</h5>-->
-                  <!--<p>Sleduj úspěšné útoky spoluhráčů i protivníků, videa na netu. Budeme rádi, když se před útokem-->
-                    <!--poradíš-->
-                    <!--s ostatními v chatu.</p>-->
-                <!--</div>-->
-
-              <!--</div>-->
-
-            <!--</div>-->
-            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
-              <!--<div class="box-rules h-100 d-flex"-->
-                   <!--data-aos="fade-zoom-in"-->
-                   <!--data-aos-easing="ease-in-back"-->
-                   <!--data-aos-delay="300"-->
-                   <!--data-aos-offset="0">-->
-                <!--<div class="align-self-center">-->
-                  <!--<h5>Harmonogram útoků ve war</h5>-->
-                  <!--<p>TH 9 musí odútočit v den startu, pokud usneš před druhým útokem, dej ho hned ráno. Pak nastupují-->
-                    <!--vyšší TH, nakonec nejvyšší. Pokud vám aktuálně nebude něco vyhovovat, hlaste to předem co-l, nebo-->
-                    <!--leaderovi. Organizování war útoků mají na starosti právě oni.</p>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
-              <!--<div class="box-rules h-100 d-flex"-->
-                   <!--data-aos="fade-zoom-in"-->
-                   <!--data-aos-easing="ease-in-back"-->
-                   <!--data-aos-delay="300"-->
-                   <!--data-aos-offset="0">-->
-                <!--<div class="align-self-center">-->
-                  <!--<h5>Chat</h5>-->
-                  <!--<p>Nepřijímáme děti a dorost, můžeš u nás mluvit, jak ti jazyk narostl. Nadávky v hojné míře používáme-->
-                    <!--jako kompliment, ne jako urážku.</p>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
-              <!--<div class="box-rules h-100 d-flex"-->
-                   <!--data-aos="fade-zoom-in"-->
-                   <!--data-aos-easing="ease-in-back"-->
-                   <!--data-aos-delay="300"-->
-                   <!--data-aos-offset="0">-->
-                <!--<div class="align-self-center">-->
-                  <!--<h5>Discord</h5>-->
-                  <!--<p>Jako klan využíváme voice/text chat pro komunikaci, sdílení informací, obyčejný pokec, a pokud-->
-                    <!--budeš-->
-                    <!--mít zájem, i pro strategii a plán útoku. Pro každého člena je povinnost Discord mít a používat ho. I-->
-                    <!--kdyby jste neměli co říct, důležité informace se sdělují jak v CoC chatu, CoC mailu, tak přes-->
-                    <!--Discord.</p>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
-              <!--<div class="box-rules h-100 d-flex"-->
-                   <!--data-aos="fade-zoom-in"-->
-                   <!--data-aos-easing="ease-in-back"-->
-                   <!--data-aos-delay="300"-->
-                   <!--data-aos-offset="0">-->
-                <!--<div class="align-self-center">-->
-                  <!--<h5>Cíle ve war</h5>-->
-                  <!--<p>TH 10 a nižší útočí na soupeře stejného TH. POKUD JE NAD TEBOU, INFORMUJ PŘED ÚTOKEM OSTATNÍ V-->
-                    <!--CHATU,-->
-                    <!--ŽE CHCEŠ JÍT NAD SEBE. TH 11 a vyšší po předchozí domluvě v chatu, tzn. klidně i nad sebe, ale JEN A-->
-                    <!--POUZE PO DOMLUVĚ, jinak pro ně platí stejné pravidlo, jako pro TH 10 a nižší.</p>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
 
           </div>
         </div>
@@ -267,9 +145,11 @@
     <div class="container py-5">
       <div class="row">
         <div class="col-12 col-md-6 text-center">
-          <img src="../assets/imgs/red-blob-icon-youtube-png-18.png" class="img-fluid" alt="" data-aos="fade-up">
-          <h2 data-aos="fade-up">YouTube Channel:</h2>
-          <p data-aos="fade-up">Aktuálně spouštíme náš YouTube kanál kde se objeví videa z Clan Wars, Friendly Wars,
+          <img src="../assets/imgs/red-blob-icon-youtube-png-18.png" class="img-fluid" alt="" data-aos="fade-up"
+               data-aos-duration="500">
+          <h2 data-aos="fade-up" data-aos-duration="500">YouTube Channel:</h2>
+          <p data-aos="fade-up" data-aos-duration="500">Aktuálně spouštíme náš YouTube kanál kde se objeví videa z Clan
+            Wars, Friendly Wars,
             návody, strategie a mnohem dalšího. Sleduj nás, lajkuj, subscribuj!</p>
 
         </div>
@@ -303,7 +183,8 @@
           </div>
         </div>
         <div class="col-12 text-right">
-          <a href="https://www.youtube.com/channel/UCf6tC9I6PXJRikgFNG_I3-Q" target="_blank" class="btn btn-link-secondary" data-aos="fade-up"
+          <a href="https://www.youtube.com/channel/UCf6tC9I6PXJRikgFNG_I3-Q" target="_blank"
+             class="btn btn-link-secondary" data-aos="fade-up"
              data-aos-delay="1500"
              data-aos-anchor-placement="center-bottom">YouTube Channel <i class="fa fa-angle-double-right"></i></a>
 
@@ -314,13 +195,12 @@
 
     </div>
   </div>
-
-
 </div>
-<footer class="footer">
-  <div class="container text-center py-2" >
 
-    <p class="mb-0" >Copyright 2018 / All Rights Reserved / United Clan</p>
+<footer class="footer">
+  <div class="container text-center py-2">
+
+    <p class="mb-0">Copyright 2018 / All Rights Reserved / United Clan</p>
   </div>
 
 </footer>

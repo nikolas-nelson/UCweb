@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from '@angular/fire/firestore';
-import {Rule} from './models/rule';
+import {Rule} from '../models/rule';
 import { Observable} from 'rxjs';
 
 @Injectable({

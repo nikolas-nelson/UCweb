@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {VideosService} from '../videos.service';
-import {FirestoreService} from '../firestore.service';
+import {FirestoreService} from '../services/firestore.service';
 import {Rule} from '../models/rule';
+import * as AOS from 'aos';
+
 
 
 @Component({
@@ -15,12 +16,13 @@ export class IntroComponent implements OnInit {
   public videos;
   public rules: Rule[];
 
-  constructor(private videoService: VideosService,
+  constructor(
   private firestoreService: FirestoreService) { }
 
   ngOnInit() {
-    this.videoService.getVideos()
-      .subscribe(data => this.videos = data);
+    AOS.init();
+    // this.videoService.getVideos()
+    //   .subscribe(data => this.videos = data);
 
     this.firestoreService.getRules().subscribe(rules => {
     this.rules = rules;

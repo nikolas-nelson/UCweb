@@ -8,13 +8,14 @@ import { IntroComponent } from './intro/intro.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AOS } from 'aos';
 import {HttpClientModule} from '@angular/common/http';
-import {VideosService} from './videos.service';
+import {VideosService} from './services/videos.service';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import {FirestoreService} from './firestore.service';
+import {FirestoreService} from './services/firestore.service';
+
 
 @NgModule({
   declarations: [

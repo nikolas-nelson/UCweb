@@ -1,4 +1,6 @@
 export interface Videos {
-  id: string;
-  videoId: string;
+  etag: string;
+  id: Object;
+  kind: string;
+  snippet: object;
 }
