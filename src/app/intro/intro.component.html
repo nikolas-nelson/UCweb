@@ -1,12 +1,12 @@
 <div class="intro" id="home">
-<div class="over">
-  <div class="container text-center">
-    <img src="../assets/imgs/logo20final.png" class="img-fluid logo" alt="">
-    <img src="../assets/imgs/king.png" class="img-fluid d-none d-md-inline-flex king" alt="">
-    <img src="../assets/imgs/builder1.png" class="img-fluid builder" alt="">
-    <div class="black-box"></div>
+  <div class="over">
+    <div class="container text-center">
+      <img src="../assets/imgs/logo20final.png" class="img-fluid logo" alt="" data-aos="fade-right">
+      <img src="../assets/imgs/king.png" class="img-fluid d-none d-md-inline-flex king" alt="" data-aos="zoom-in">
+      <img src="../assets/imgs/builder1.png" class="img-fluid builder" alt="" data-aos="fade-up">
+      <div class="black-box"></div>
+    </div>
   </div>
-</div>
 
 
 </div>
@@ -15,16 +15,19 @@
     <div class="container py-5">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6 order-2 order-lg-1 align-self-center">
-          <img src="../assets/imgs/builder3.png" class="img-fluid" alt="">
+          <img src="../assets/imgs/builder3.png" class="img-fluid" alt="" data-aos="fade-up">
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2 py-5">
-          <div class="box p-5">
+          <div class="box p-5" data-aos="fade-left">
             <h3>UNITED CLAN</h3>
             <h5>Mental Institute</h5>
             <p>
-              Jsme český klan. Ostřílení hráči, co se nebojí dělat si srandu sami ze sebe. Být aktivní pro nás znamená, že
-              buildeři a lab nikdy nespí, level hrdinů se neustále zvedá. Je to jako mít druhou práci – krev, pot a slzy.
-              Ale musí to být zároveň i zábava, takže pokud ti občas něco usne, my z toho střílet nebudeme. Snahu poznáme.
+              Jsme český klan. Ostřílení hráči, co se nebojí dělat si srandu sami ze sebe. Být aktivní pro nás znamená,
+              že
+              buildeři a lab nikdy nespí, level hrdinů se neustále zvedá. Je to jako mít druhou práci – krev, pot a
+              slzy.
+              Ale musí to být zároveň i zábava, takže pokud ti občas něco usne, my z toho střílet nebudeme. Snahu
+              poznáme.
               Pokud jsi aktivní a nemáš moc uspěchanou TH, přidej se k nám a pojď se s námi bavit.
             </p>
           </div>
@@ -45,7 +48,7 @@
   <div class="over-2">
     <div class="container py-5">
       <div class="row">
-        <div class="box col-sm-12 col-md-12 col-lg-6 p-5 align-self-center">
+        <div class="box col-sm-12 col-md-12 col-lg-6 p-5 align-self-center" data-aos="fade-right">
           <h2 class="font-weight-bold">Přijímáme Aktivní Hráče</h2>
           <ul class="list-unstyled">
             <li>Neuspěchaná base</li>
@@ -56,13 +59,13 @@
             <li>Věk 18+</li>
             <li>Zájem budovat společný klan</li>
             <p class="text-right">
-              <a href="#join" class="btn btn-link">Přidej se k nám <i class="fa fa-angle-double-right"></i></a>
+              <a href="#discord" class="btn btn-link">Přidej se k nám <i class="fa fa-angle-double-right"></i></a>
             </p>
           </ul>
 
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 align-self-center">
-          <img src="../assets/imgs/builder4.png" class="img-fluid" alt="">
+          <img src="../assets/imgs/builder4.png" class="img-fluid" alt="" data-aos="fade-up">
         </div>
       </div>
     </div>
@@ -72,142 +75,187 @@
 
 <div class="rules" id="pravidla">
   <div class="over-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12 align-self-center bg-img">
-        <img src="../assets/imgs/builder5.png" class="img-fluid" alt="">
-      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 align-self-center bg-img">
+          <img src="../assets/imgs/builder5.png" class="img-fluid" alt="" data-aos="fade-up"
+               data-aos-anchor-placement="top-center">
+        </div>
 
-      <div class="col-sm-12 col-md-12 ">
-        <h2 class="text-center">Pravidla klanu:</h2>
-        <h3 class="text-center">(všichni přečíst alespoň jednou a dodržovat)</h3>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="box-rules h-100 d-flex">
-              <div class="align-self-center">
-                <h5>Aktivita</h5>
-                <p>Je nám u zadele, kolik dáš útoků za sezónu. Chceme vidět tvůj progres. Pokud zvedáš hrdiny, buildeři
-                  nespí a v labu se svítí, jsme maximálně spokojení.</p>
+        <div class="col-sm-12 col-md-12 ">
+          <h2 class="text-center" data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0">Pravidla klanu:</h2>
+          <h3 class="text-center" data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0">(všichni přečíst alespoň jednou a dodržovat)</h3>
+          <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4" *ngFor="let rule of rules">
+              <div class="box-rules h-100 d-flex" >
+                <div class="align-self-center">
+                  <h5>{{rule.title}}</h5>
+                  <p>{{rule.text}}</p>
+                </div>
+
               </div>
 
             </div>
 
+            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
+              <!--<div class="box-rules h-100 d-flex"-->
+                   <!--data-aos="fade-zoom-in"-->
+                   <!--data-aos-easing="ease-in-back"-->
+                   <!--data-aos-delay="300"-->
+                   <!--data-aos-offset="0">-->
+                <!--<div class="align-self-center">-->
+                  <!--<h5>Donate</h5>-->
+                  <!--<p>Poměr donate a received neřešíme, rádi naše členy podpoříme v růstu, takže si žádej co chceš. Jen-->
+                    <!--musíš-->
+                    <!--počítat s tím, že pokud zadáš určité jednotky, může se stát, že na ně budeš čekat déle. Pouhé-->
+                    <!--vyžírky-->
+                    <!--poznáme, o takové hráče nestojíme.</p>-->
+                <!--</div>-->
+
+              <!--</div>-->
+
+            <!--</div>-->
+            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
+              <!--<div class="box-rules h-100 d-flex"-->
+                   <!--data-aos="fade-zoom-in"-->
+                   <!--data-aos-easing="ease-in-back"-->
+                   <!--data-aos-delay="300"-->
+                   <!--data-aos-offset="0">-->
+                <!--<div class="align-self-center">-->
+                  <!--<h5>Clan War Request</h5>-->
+                  <!--<p>Do war zone patří jen jednotky s maximálním lvl. To samé do war rq.</p>-->
+                <!--</div>-->
+
+              <!--</div>-->
+
+            <!--</div>-->
+            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
+              <!--<div class="box-rules h-100 d-flex"-->
+                   <!--data-aos="fade-zoom-in"-->
+                   <!--data-aos-easing="ease-in-back"-->
+                   <!--data-aos-delay="300"-->
+                   <!--data-aos-offset="0">-->
+                <!--<div class="align-self-center">-->
+                  <!--<h5>War Base</h5>-->
+                  <!--<p>Pokud už budete kopírovat base z netu, upravte ji podle sebe. Nad každou se pozastavíme a-->
+                    <!--prodiskutujeme, jak ji ještě vylepšit. Samozřejmostí je pak zkouška v Challenges.</p>-->
+                <!--</div>-->
+
+              <!--</div>-->
+
+            <!--</div>-->
+
+            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
+              <!--<div class="box-rules  h-100 d-flex"-->
+                   <!--data-aos="fade-zoom-in"-->
+                   <!--data-aos-easing="ease-in-back"-->
+                   <!--data-aos-delay="300"-->
+                   <!--data-aos-offset="0">-->
+                <!--<div class="align-self-center">-->
+                  <!--<h5>War strategie</h5>-->
+                  <!--<p>Sleduj úspěšné útoky spoluhráčů i protivníků, videa na netu. Budeme rádi, když se před útokem-->
+                    <!--poradíš-->
+                    <!--s ostatními v chatu.</p>-->
+                <!--</div>-->
+
+              <!--</div>-->
+
+            <!--</div>-->
+            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
+              <!--<div class="box-rules h-100 d-flex"-->
+                   <!--data-aos="fade-zoom-in"-->
+                   <!--data-aos-easing="ease-in-back"-->
+                   <!--data-aos-delay="300"-->
+                   <!--data-aos-offset="0">-->
+                <!--<div class="align-self-center">-->
+                  <!--<h5>Harmonogram útoků ve war</h5>-->
+                  <!--<p>TH 9 musí odútočit v den startu, pokud usneš před druhým útokem, dej ho hned ráno. Pak nastupují-->
+                    <!--vyšší TH, nakonec nejvyšší. Pokud vám aktuálně nebude něco vyhovovat, hlaste to předem co-l, nebo-->
+                    <!--leaderovi. Organizování war útoků mají na starosti právě oni.</p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
+              <!--<div class="box-rules h-100 d-flex"-->
+                   <!--data-aos="fade-zoom-in"-->
+                   <!--data-aos-easing="ease-in-back"-->
+                   <!--data-aos-delay="300"-->
+                   <!--data-aos-offset="0">-->
+                <!--<div class="align-self-center">-->
+                  <!--<h5>Chat</h5>-->
+                  <!--<p>Nepřijímáme děti a dorost, můžeš u nás mluvit, jak ti jazyk narostl. Nadávky v hojné míře používáme-->
+                    <!--jako kompliment, ne jako urážku.</p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
+              <!--<div class="box-rules h-100 d-flex"-->
+                   <!--data-aos="fade-zoom-in"-->
+                   <!--data-aos-easing="ease-in-back"-->
+                   <!--data-aos-delay="300"-->
+                   <!--data-aos-offset="0">-->
+                <!--<div class="align-self-center">-->
+                  <!--<h5>Discord</h5>-->
+                  <!--<p>Jako klan využíváme voice/text chat pro komunikaci, sdílení informací, obyčejný pokec, a pokud-->
+                    <!--budeš-->
+                    <!--mít zájem, i pro strategii a plán útoku. Pro každého člena je povinnost Discord mít a používat ho. I-->
+                    <!--kdyby jste neměli co říct, důležité informace se sdělují jak v CoC chatu, CoC mailu, tak přes-->
+                    <!--Discord.</p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="col-12 col-md-6 col-lg-4 mb-4">-->
+              <!--<div class="box-rules h-100 d-flex"-->
+                   <!--data-aos="fade-zoom-in"-->
+                   <!--data-aos-easing="ease-in-back"-->
+                   <!--data-aos-delay="300"-->
+                   <!--data-aos-offset="0">-->
+                <!--<div class="align-self-center">-->
+                  <!--<h5>Cíle ve war</h5>-->
+                  <!--<p>TH 10 a nižší útočí na soupeře stejného TH. POKUD JE NAD TEBOU, INFORMUJ PŘED ÚTOKEM OSTATNÍ V-->
+                    <!--CHATU,-->
+                    <!--ŽE CHCEŠ JÍT NAD SEBE. TH 11 a vyšší po předchozí domluvě v chatu, tzn. klidně i nad sebe, ale JEN A-->
+                    <!--POUZE PO DOMLUVĚ, jinak pro ně platí stejné pravidlo, jako pro TH 10 a nižší.</p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+
           </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="box-rules h-100 d-flex">
-              <div class="align-self-center">
-                <h5>Donate</h5>
-                <p>Poměr donate a received neřešíme, rádi naše členy podpoříme v růstu, takže si žádej co chceš. Jen
-                  musíš
-                  počítat s tím, že pokud zadáš určité jednotky, může se stát, že na ně budeš čekat déle. Pouhé vyžírky
-                  poznáme, o takové hráče nestojíme.</p>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="box-rules h-100 d-flex">
-              <div class="align-self-center">
-                <h5>Clan War Request</h5>
-                <p>Do war zone patří jen jednotky s maximálním lvl. To samé do war rq.</p>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="box-rules h-100 d-flex">
-              <div class="align-self-center">
-                <h5>War Base</h5>
-                <p>Pokud už budete kopírovat base z netu, upravte ji podle sebe. Nad každou se pozastavíme a
-                  prodiskutujeme, jak ji ještě vylepšit. Samozřejmostí je pak zkouška v Challenges.</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="box-rules  h-100 d-flex">
-              <div class="align-self-center">
-                <h5>War strategie</h5>
-                <p>Sleduj úspěšné útoky spoluhráčů i protivníků, videa na netu. Budeme rádi, když se před útokem poradíš
-                  s ostatními v chatu.</p>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="box-rules h-100 d-flex">
-              <div class="align-self-center">
-                <h5>Harmonogram útoků ve war</h5>
-                <p>TH 9 musí odútočit v den startu, pokud usneš před druhým útokem, dej ho hned ráno. Pak nastupují
-                  vyšší TH, nakonec nejvyšší. Pokud vám aktuálně nebude něco vyhovovat, hlaste to předem co-l, nebo
-                  leaderovi. Organizování war útoků mají na starosti právě oni.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="box-rules h-100 d-flex">
-              <div class="align-self-center">
-                <h5>Chat</h5>
-                <p>Nepřijímáme děti a dorost, můžeš u nás mluvit, jak ti jazyk narostl. Nadávky v hojné míře používáme
-                  jako kompliment, ne jako urážku.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="box-rules h-100 d-flex">
-              <div class="align-self-center">
-                <h5>Discord</h5>
-                <p>Jako klan využíváme voice/text chat pro komunikaci, sdílení informací, obyčejný pokec, a pokud budeš
-                  mít zájem, i pro strategii a plán útoku. Pro každého člena je povinnost Discord mít a používat ho. I
-                  kdyby jste neměli co říct, důležité informace se sdělují jak v CoC chatu, CoC mailu, tak přes
-                  Discord.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="box-rules h-100 d-flex">
-              <div class="align-self-center">
-                <h5>Cíle ve war</h5>
-                <p>TH 10 a nižší útočí na soupeře stejného TH. POKUD JE NAD TEBOU, INFORMUJ PŘED ÚTOKEM OSTATNÍ V CHATU,
-                  ŽE CHCEŠ JÍT NAD SEBE. TH 11 a vyšší po předchozí domluvě v chatu, tzn. klidně i nad sebe, ale JEN A
-                  POUZE PO DOMLUVĚ, jinak pro ně platí stejné pravidlo, jako pro TH 10 a nižší.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
-  </div>
   </div>
 </div>
 <div class="discord" id="discord">
   <div class="container py-5">
     <div class="row">
-      <div class="col-12 col-md-8 mb-4">
+      <div class="col-12 col-md-8 mb-4" data-aos="fade-up">
         <h2>
           Jak se přihlásit k nám na Discord.
         </h2>
         <p>
-          Discord je hráči široce používaná aplikace pro voice/text komunikaci. Funguje na počítači, tabletu, mobilu i v prohlížeči. Má mnoho užitečných funkcí a stále se vyvíjí. Obsahuje i češtinu.
+          Discord je hráči široce používaná aplikace pro voice/text komunikaci. Funguje na počítači, tabletu, mobilu i v
+          prohlížeči. Má mnoho užitečných funkcí a stále se vyvíjí. Obsahuje i češtinu.
         </p>
         <p>
-          Přihlásit se k nám na server můžeš pomocí kódu <span class="kod">qGMaJ4Y</span>, nebo stisknutím tlačítko níže.
+          Přihlásit se k nám na server můžeš pomocí kódu <span class="kod">qGMaJ4Y</span>, nebo stisknutím tlačítko
+          níže.
         </p>
-        <a href="#" class="btn btn-outline-secondary">Přihlásit na Discord</a>
+        <a href="https://discord.gg/qGMaJ4Y" target="_blank" class="btn btn-outline-secondary">Přihlásit na Discord</a>
 
       </div>
       <div class="col-12 col-md-4 text-center">
-        <img src="../assets/imgs/disc.png" class="img-fluid" alt="">
+        <img src="../assets/imgs/disc.png" class="img-fluid" alt="" data-aos="zoom-out-down">
       </div>
     </div>
 
@@ -217,42 +265,62 @@
 <div class="youtube" id="youtube">
   <div class="over-5">
     <div class="container py-5">
-    <div class="row">
-      <div class="col-12 col-md-6 text-center">
-        <img src="../assets/imgs/red-blob-icon-youtube-png-18.png" class="img-fluid" alt="">
-        <h2>YouTube Channel:</h2>
-        <p>Aktuálně spouštíme náš YouTube kanál kde se objeví videa z Clan Wars, Friendly Wars, návody, strategie a mnohem dalšího. Sleduj nás, lajkuj, subscribuj!</p>
+      <div class="row">
+        <div class="col-12 col-md-6 text-center">
+          <img src="../assets/imgs/red-blob-icon-youtube-png-18.png" class="img-fluid" alt="" data-aos="fade-up">
+          <h2 data-aos="fade-up">YouTube Channel:</h2>
+          <p data-aos="fade-up">Aktuálně spouštíme náš YouTube kanál kde se objeví videa z Clan Wars, Friendly Wars,
+            návody, strategie a mnohem dalšího. Sleduj nás, lajkuj, subscribuj!</p>
 
-      </div>
-      <div class="col-12 col-md-6 text-center">
-        <img src="../assets/imgs/ED.png" class="img-fluid img-ed" alt="">
-      </div>
-      <div class="col-12 col-md-4 img-before">
-        <div class="text-center yt-box p-2 mb-4">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zp8frZxvfT4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="text-center yt-box p-2 mb-4">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zp8frZxvfT4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-12 col-md-6 text-center">
+          <img src="../assets/imgs/ED.png" class="img-fluid img-ed" alt="" data-aos="fade-left">
         </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="text-center yt-box p-2 mb-4">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zp8frZxvfT4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-12 col-md-4 img-before">
+          <div class="text-center yt-box p-2 mb-4" data-aos="fade-right"
+               data-aos-duration="500">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zp8frZxvfT4?controls=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
         </div>
+        <div class="col-12 col-md-4">
+          <div class="text-center yt-box p-2 mb-4" data-aos="fade-right"
+               data-aos-delay="500"
+               data-aos-duration="500">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zp8frZxvfT4?controls=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="text-center yt-box p-2 mb-4" data-aos="fade-right"
+               data-aos-delay="1000"
+               data-aos-duration="500">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zp8frZxvfT4?controls=0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-12 text-right">
+          <a href="https://www.youtube.com/channel/UCf6tC9I6PXJRikgFNG_I3-Q" target="_blank" class="btn btn-link-secondary" data-aos="fade-up"
+             data-aos-delay="1500"
+             data-aos-anchor-placement="center-bottom">YouTube Channel <i class="fa fa-angle-double-right"></i></a>
+
+        </div>
+
+
       </div>
 
     </div>
-
   </div>
-</div>
 
 
 </div>
 <footer class="footer">
-  <div class="container text-center py-2">
-    <p class="mb-0">Copyright 2018 / All Rights Reserved / United Clan</p>
+  <div class="container text-center py-2" >
+
+    <p class="mb-0" >Copyright 2018 / All Rights Reserved / United Clan</p>
   </div>
 
 </footer>

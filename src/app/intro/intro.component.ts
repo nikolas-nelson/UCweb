@@ -1,4 +1,8 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {VideosService} from '../videos.service';
+import {FirestoreService} from '../firestore.service';
+import {Rule} from '../models/rule';
+
 
 @Component({
   selector: 'app-intro',
@@ -8,9 +12,19 @@ import {Component, HostListener, OnInit} from '@angular/core';
 
 export class IntroComponent implements OnInit {
 
-  constructor() { }
+  public videos;
+  public rules: Rule[];
+
+  constructor(private videoService: VideosService,
+  private firestoreService: FirestoreService) { }
 
   ngOnInit() {
+    this.videoService.getVideos()
+      .subscribe(data => this.videos = data);
+
+    this.firestoreService.getRules().subscribe(rules => {
+    this.rules = rules;
+    } );
   }
 
 }

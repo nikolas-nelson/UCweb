@@ -8,3 +8,22 @@
     border: 2px solid #3E3E3E;
   }
 }
+
+.btn-link-secondary {
+  position: relative;
+  z-index: 10;
+  color: #860F0F;
+  &:hover {
+    color: #3E3E3E;
+  }
+  &::after {
+    content: '';
+    display: block;
+    border-bottom: solid 2px #860F0F;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
