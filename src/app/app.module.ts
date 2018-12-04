@@ -15,13 +15,15 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import {FirestoreService} from './services/firestore.service';
+import { YTvideosPipe } from './ytvideos.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    IntroComponent
+    IntroComponent,
+    YTvideosPipe
   ],
   imports: [
     BrowserModule,

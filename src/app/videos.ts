@@ -1,6 +1,7 @@
 export interface Videos {
+  VideoService: object;
   etag: string;
-  id: Object;
+  id: string;
   kind: string;
   snippet: object;
 }

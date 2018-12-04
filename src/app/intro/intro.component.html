@@ -156,50 +156,30 @@
         <div class="col-12 col-md-6 text-center">
           <img src="../assets/imgs/ED.png" class="img-fluid img-ed" alt="" data-aos="fade-left">
         </div>
-        <div class="col-12 col-md-4 img-before">
-          <div class="text-center yt-box p-2 mb-4" data-aos="fade-right"
-               data-aos-duration="500">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zp8frZxvfT4?controls=0"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
+
+        <div class="col-12 col-md-4" *ngFor="let i of items">
           <div class="text-center yt-box p-2 mb-4" data-aos="fade-right"
                data-aos-delay="500"
                data-aos-duration="500">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zp8frZxvfT4?controls=0"
+            <iframe width="100%" height="100%" [src]="i.snippet.resourceId.videoId | yTvideos"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="text-center yt-box p-2 mb-4" data-aos="fade-right"
-               data-aos-delay="1000"
-               data-aos-duration="500">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zp8frZxvfT4?controls=0"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
+
         <div class="col-12 text-right">
           <a href="https://www.youtube.com/channel/UCf6tC9I6PXJRikgFNG_I3-Q" target="_blank"
              class="btn btn-link-secondary" data-aos="fade-up"
              data-aos-delay="1500"
              data-aos-anchor-placement="center-bottom">YouTube Channel <i class="fa fa-angle-double-right"></i></a>
-
         </div>
-
-
       </div>
-
     </div>
   </div>
 </div>
 
 <footer class="footer">
   <div class="container text-center py-2">
-
     <p class="mb-0">Copyright 2018 / All Rights Reserved / United Clan</p>
   </div>
 
