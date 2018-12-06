@@ -7,7 +7,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { IntroComponent } from './intro/intro.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AOS } from 'aos';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import {VideosService} from './services/videos.service';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
@@ -16,6 +16,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import {FirestoreService} from './services/firestore.service';
 import { YTvideosPipe } from './ytvideos.pipe';
+import {CocapiService} from './services/cocapi.service';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { YTvideosPipe } from './ytvideos.pipe';
   ],
   providers: [
     VideosService,
-    FirestoreService
+    FirestoreService,
+    CocapiService,
   ],
   bootstrap: [AppComponent]
 })

@@ -3,14 +3,11 @@ import {FirestoreService} from '../services/firestore.service';
 import {Rule} from '../models/rule';
 import {HttpClient} from '@angular/common/http';
 import * as AOS from 'aos';
-import { Videos} from '../videos';
-import {Subscription} from 'rxjs';
-import { VideosService} from '../services/videos.service';
+import {Videos} from '../videos';
+import {VideosService} from '../services/videos.service';
+import {CocapiService} from '../services/cocapi.service';
 
 
-interface VideoService {
-  video: Videos;
-}
 
 
 @Component({
@@ -24,9 +21,10 @@ export class IntroComponent implements OnInit {
   public videos: any;
   public items = [];
   public rules: Rule[];
+  public clan: any;
 
   constructor(private http: HttpClient, private videosService: VideosService,
-              private firestoreService: FirestoreService) {
+              private firestoreService: FirestoreService, private cocApi: CocapiService) {
 
   }
 
@@ -36,6 +34,9 @@ export class IntroComponent implements OnInit {
         this.videos = response;
         this.items = this.videos.items;
       });
+    this.cocApi.getClanInfo().subscribe(res => {
+      this.clan = res;
+    });
 
     this.firestoreService.getRules().subscribe(rules => {
       this.rules = rules;
