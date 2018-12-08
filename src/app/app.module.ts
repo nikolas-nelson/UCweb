@@ -16,7 +16,6 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import {FirestoreService} from './services/firestore.service';
 import { YTvideosPipe } from './ytvideos.pipe';
-import {CocapiService} from './services/cocapi.service';
 
 
 @NgModule({
@@ -39,7 +38,6 @@ import {CocapiService} from './services/cocapi.service';
   providers: [
     VideosService,
     FirestoreService,
-    CocapiService,
   ],
   bootstrap: [AppComponent]
 })

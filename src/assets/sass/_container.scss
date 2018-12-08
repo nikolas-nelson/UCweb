@@ -333,6 +333,13 @@
   background-color: #DBDBDB;
   overflow: hidden;
 
+  .videoTitle {
+    position: relative;
+    z-index: 10;
+    color: #3E3E3E;
+
+  }
+
   @media (min-width: 768px) {
     background: url("/assets/imgs/bg-02.jpg") top right no-repeat;
     background-size: cover;
