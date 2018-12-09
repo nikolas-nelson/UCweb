@@ -4,6 +4,7 @@ import {Rule} from '../models/rule';
 import {HttpClient} from '@angular/common/http';
 import * as AOS from 'aos';
 import {VideosService} from '../services/videos.service';
+import {ClaninfoService} from '../services/claninfo.service';
 
 
 
@@ -22,7 +23,7 @@ export class IntroComponent implements OnInit {
   public clan: any;
 
   constructor(private http: HttpClient, private videosService: VideosService,
-              private firestoreService: FirestoreService) {
+              private firestoreService: FirestoreService, private clanService: ClaninfoService) {
 
   }
 
@@ -32,6 +33,12 @@ export class IntroComponent implements OnInit {
         this.videos = response;
         this.items = this.videos.items;
       });
+
+    // Retrieve posts from the API
+    this.clanService.getAllInfo().subscribe(data => {
+      this.clan = data;
+      console.log(this.clan);
+    });
 
     this.firestoreService.getRules().subscribe(rules => {
       this.rules = rules;

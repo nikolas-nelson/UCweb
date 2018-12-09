@@ -16,6 +16,20 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import {FirestoreService} from './services/firestore.service';
 import { YTvideosPipe } from './ytvideos.pipe';
+import {RouterModule} from '@angular/router';
+import {ClaninfoService} from './services/claninfo.service';
+
+const ROUTES = [
+  {
+    path: '',
+    redirectTo: 'clan',
+    pathMatch: 'full'
+  },
+  {
+    path: 'clan',
+    component: IntroComponent
+  }
+];
 
 
 @NgModule({
@@ -33,11 +47,13 @@ import { YTvideosPipe } from './ytvideos.pipe';
     AngularFireModule.initializeApp(environment.firebase, 'angularfs'),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
-    AngularFireStorageModule // imports firebase/storage only needed for storage features
+    AngularFireStorageModule, // imports firebase/storage only needed for storage features
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [
     VideosService,
     FirestoreService,
+    ClaninfoService
   ],
   bootstrap: [AppComponent]
 })
