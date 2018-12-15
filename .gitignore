@@ -40,3 +40,4 @@ Thumbs.db
 /node_modules/
 /src/environments/
 !/src/environments/
+/functions/node_modules/

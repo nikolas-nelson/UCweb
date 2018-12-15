@@ -159,8 +159,8 @@
 
         <div class="col-12 col-md-4" *ngFor="let i of items">
           <div class="text-center yt-box p-2 mb-4" data-aos="fade-right"
-            data-aos-delay="500"
-            data-aos-duration="500">
+               data-aos-delay="500"
+               data-aos-duration="500">
             <iframe width="100%" height="100%" [src]="i.snippet.resourceId.videoId | yTvideos"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -180,12 +180,71 @@
     </div>
   </div>
 </div>
-<div class="p-4">
-  <p> ...{{clan}}</p>
-</div>
 
 <footer class="footer">
-  <div class="container text-center py-2">
+  <!--<div class="container py-4 ">-->
+    <!--<div class="row">-->
+      <!--<div class="col-12 col-md-4 col-lg-2 text-center">-->
+        <!--<img [src]="clan?.badgeUrls.medium" alt="" class="img-fluid mb-2">-->
+      <!--</div>-->
+
+      <!--<div class="col-12 col-md-8 col-lg-4 py-3 text-center">-->
+        <!--<p>-->
+          <!--<small>{{clan?.description}}</small>-->
+        <!--</p>-->
+
+      <!--</div>-->
+
+      <!--<div class="col-12 col-md-4 col-lg-2 text-center">-->
+        <!--<h5>{{clan?.name}}</h5>-->
+        <!--<p class="mb-2">-->
+          <!--<small><img src="../assets/imgs/CZ.png" alt="" class="icon-cz mr-2">{{clan?.location.name}}</small>-->
+        <!--</p>-->
+        <!--<p class="mb-2"><span class="badge badge-light p-2 "><small>{{clan?.tag}}</small></span></p>-->
+        <!--<p class="mb-2"><span class="badge badge-success p-2"><i-->
+          <!--class="fa fa-users"></i> Members: {{clan?.members}}</span></p>-->
+      <!--</div>-->
+        <!--<div class="col-12 col-md-8 col-lg-4 text-center">-->
+        <!--<ul class="list-inline mb-0">-->
+          <!--<li class="list-inline-item">-->
+            <!--<p><span class="badge badge-light p-2">-->
+          <!--<img src="../assets/imgs/trophy.png" alt="" class="icon">-->
+              <!--{{clan?.clanPoints}}-->
+        <!--</span></p>-->
+          <!--</li>-->
+          <!--<li class="list-inline-item">-->
+            <!--<p><span class="badge badge-secondary p-2">-->
+          <!--<img src="../assets/imgs/bbtrophy.png" alt="" class="icon">-->
+              <!--{{clan?.clanVersusPoints}}-->
+        <!--</span></p>-->
+          <!--</li>-->
+        <!--</ul>-->
+        <!--<ul class="list-inline mb-0">-->
+          <!--<li class="list-inline-item">-->
+            <!--<p><span class="badge badge-secondary p-2">-->
+          <!--<img src="../assets/imgs/win.png" alt="" class="icon">-->
+              <!--War Wins: {{clan?.warWins}}-->
+        <!--</span></p>-->
+          <!--</li>-->
+          <!--<li class="list-inline-item">-->
+            <!--<p><span class="badge badge-light p-2">-->
+          <!--<img src="../assets/imgs/wins.png" alt="" class="icon">-->
+             <!--War Win Streak: {{clan?.warWinStreak}}-->
+        <!--</span></p>-->
+          <!--</li>-->
+
+        <!--</ul>-->
+
+        <!--<p class="mb-2"><span class="badge badge-info p-2"><small><i-->
+          <!--class="fa fa-trophy"></i> Trophies required: {{clan?.requiredTrophies}}</small></span></p>-->
+
+      <!--</div>-->
+
+    <!--</div>-->
+
+  <!--</div>-->
+  <!--<hr>-->
+  <div class="container text-center pb-2">
     <p class="mb-0">Copyright 2018 / All Rights Reserved / United Clan</p>
   </div>
 

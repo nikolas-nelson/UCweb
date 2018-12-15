@@ -28,16 +28,13 @@ export class IntroComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.http.get('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLiePhqa3Nl2fj6BENXPO-WtYz7FDW-WwN&key=AIzaSyCJULnoBnkfPpFZMsZPiGnIVuF__qhEAAg')
-      .subscribe(response => {
+    this.videosService.getVideos().subscribe( response => {
         this.videos = response;
         this.items = this.videos.items;
       });
 
-    // Retrieve posts from the API
-    this.clanService.getAllInfo().subscribe(data => {
-      this.clan = data;
-      console.log(this.clan);
+    this.clanService.getAllInfo().subscribe((clan) => {
+      this.clan = clan;
     });
 
     this.firestoreService.getRules().subscribe(rules => {

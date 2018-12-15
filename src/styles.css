@@ -359,6 +359,12 @@
 .footer {
   color: #DBDBDB;
   background-color: #3E3E3E; }
+  .footer .icon {
+    width: 20px;
+    height: 20px; }
+  .footer .icon-cz {
+    width: 15px;
+    height: 10px; }
 
 H1, h2 {
   color: white; }
