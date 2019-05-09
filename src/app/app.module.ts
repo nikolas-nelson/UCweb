@@ -17,6 +17,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import {FirestoreService} from './services/firestore.service';
 import { YTvideosPipe } from './ytvideos.pipe';
 import {ClaninfoService} from './services/claninfo.service';
+import {ClashstatsService} from './services/clashstats.service';
 
 
 
@@ -40,7 +41,8 @@ import {ClaninfoService} from './services/claninfo.service';
   providers: [
     VideosService,
     FirestoreService,
-    ClaninfoService
+    ClaninfoService,
+    ClashstatsService
   ],
   bootstrap: [AppComponent]
 })

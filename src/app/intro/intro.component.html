@@ -1,9 +1,23 @@
 <div class="intro" id="home">
   <div class="over">
     <div class="container text-center">
-      <img src="../assets/imgs/logo20final.png" class="img-fluid logo" alt="" data-aos="fade-right">
-      <img src="../assets/imgs/king.png" class="img-fluid d-none d-md-inline-flex king" alt="" data-aos="zoom-in">
-      <img src="../assets/imgs/builder1.png" class="img-fluid builder" alt="" data-aos="fade-up">
+      <picture>
+        <source srcset="../assets/imgs/logo20final.webp" type="image/webp" >
+        <source srcset="../assets/imgs/logo20final.png" type="image/png" >
+        <img src="../assets/imgs/logo20final.png" class="img-fluid logo" alt="logo" data-aos="fade-right">
+      </picture>
+      <picture >
+        <source srcset="../assets/imgs/king.webp" type="image/webp" >
+        <source srcset="../assets/imgs/king.png" type="image/png" >
+        <img src="../assets/imgs/king.png" class="img-fluid d-none d-md-inline-flex king" alt="king">
+      </picture>
+
+      <picture >
+        <source srcset="../assets/imgs/builder1.webp" type="image/webp">
+        <source srcset="../assets/imgs/builder1.png" type="image/png">
+        <img src="../assets/imgs/builder1.png" class="img-fluid builder" alt="" data-aos="fade-up">
+      </picture>
+
       <div class="black-box"></div>
     </div>
   </div>
@@ -15,7 +29,12 @@
     <div class="container py-5">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6 order-2 order-lg-1 align-self-center">
-          <img src="../assets/imgs/builder3.png" class="img-fluid" alt="" data-aos="fade-up">
+          <picture>
+            <source srcset="../assets/imgs/builder3.webp" type="image/webp">
+            <source srcset="../assets/imgs/builder3.png" type="image/png">
+            <img src="../assets/imgs/builder3.png" class="img-fluid" alt="" data-aos="fade-up">
+          </picture>
+
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2 py-5">
           <div class="box p-5" data-aos="fade-left">
@@ -65,7 +84,12 @@
 
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 align-self-center">
-          <img src="../assets/imgs/builder4.png" class="img-fluid" alt="" data-aos="fade-up">
+          <picture>
+            <source srcset="../assets/imgs/builder4.webp" type="image/webp">
+            <source srcset="../assets/imgs/builder4.png" type="image/png">
+            <img src="../assets/imgs/builder4.png" class="img-fluid" alt="builder" data-aos="fade-up">
+          </picture>
+
         </div>
       </div>
     </div>
@@ -78,8 +102,13 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12 align-self-center bg-img">
-          <img src="../assets/imgs/builder5.png" class="img-fluid" alt="" data-aos="fade-up"
-               data-aos-anchor-placement="top-center">
+          <picture>
+            <source srcset="../assets/imgs/builder5.webp" type="image/webp">
+            <source srcset="../assets/imgs/builder5.png" type="image/png">
+            <img src="../assets/imgs/builder5.png" class="img-fluid" alt="" data-aos="fade-up"
+                 data-aos-anchor-placement="top-center">
+          </picture>
+
         </div>
 
         <div class="col-sm-12 col-md-12 ">
@@ -133,7 +162,12 @@
 
       </div>
       <div class="col-12 col-md-4 text-center">
-        <img src="../assets/imgs/disc.png" class="img-fluid" alt="" data-aos="zoom-out-down">
+        <picture>
+          <source srcset="../assets/imgs/disc.webp" type="image/webp">
+          <source srcset="../assets/imgs/disc.png" type="image/png">
+          <img src="../assets/imgs/disc.png" class="img-fluid" alt="" data-aos="zoom-out-down">
+        </picture>
+
       </div>
     </div>
 
@@ -145,8 +179,12 @@
     <div class="container py-5">
       <div class="row">
         <div class="col-12 col-md-6 text-center">
-          <img src="../assets/imgs/red-blob-icon-youtube-png-18.png" class="img-fluid" alt="" data-aos="fade-up"
-               data-aos-duration="500">
+          <picture>
+            <source srcset="../assets/imgs/red-blob-icon-youtube-png-18.webp" type="image/webp">
+            <source srcset="../assets/imgs/red-blob-icon-youtube-png-18.png" type="image/png">
+            <img src="../assets/imgs/red-blob-icon-youtube-png-18.png" class="img-fluid" alt="" data-aos="fade-up"
+                 data-aos-duration="500">
+          </picture>
           <h2 data-aos="fade-up" data-aos-duration="500">YouTube Channel:</h2>
           <p data-aos="fade-up" data-aos-duration="500">Aktuálně spouštíme náš YouTube kanál kde se objeví videa z Clan
             Wars, Friendly Wars,
@@ -154,7 +192,12 @@
 
         </div>
         <div class="col-12 col-md-6 text-center">
-          <img src="../assets/imgs/ED.png" class="img-fluid img-ed" alt="" data-aos="fade-left">
+          <picture>
+            <source srcset="../assets/imgs/ED.webp" type="image/webp">
+            <source srcset="../assets/imgs/ED.png" type="image/png">
+            <img src="../assets/imgs/ED.png" class="img-fluid img-ed" alt="" data-aos="fade-left">
+          </picture>
+
         </div>
 
         <div class="col-12 col-md-4" *ngFor="let i of items">
@@ -182,68 +225,85 @@
 </div>
 
 <footer class="footer">
-  <!--<div class="container py-4 ">-->
-    <!--<div class="row">-->
-      <!--<div class="col-12 col-md-4 col-lg-2 text-center">-->
-        <!--<img [src]="clan?.badgeUrls.medium" alt="" class="img-fluid mb-2">-->
-      <!--</div>-->
+  <div class="container py-4 ">
+    <div class="row">
+      <div class="col-12 col-md-4 col-lg-2 text-center">
+        <img *ngIf="clan" [src]="clan?.badgeUrls.medium" alt="" class="img-fluid mb-2">
+      </div>
 
-      <!--<div class="col-12 col-md-8 col-lg-4 py-3 text-center">-->
-        <!--<p>-->
-          <!--<small>{{clan?.description}}</small>-->
-        <!--</p>-->
+      <div class="col-12 col-md-8 col-lg-4 py-3 text-center">
+        <p>
+          <small>{{clan?.description}}</small>
+        </p>
 
-      <!--</div>-->
+      </div>
 
-      <!--<div class="col-12 col-md-4 col-lg-2 text-center">-->
-        <!--<h5>{{clan?.name}}</h5>-->
-        <!--<p class="mb-2">-->
-          <!--<small><img src="../assets/imgs/CZ.png" alt="" class="icon-cz mr-2">{{clan?.location.name}}</small>-->
-        <!--</p>-->
-        <!--<p class="mb-2"><span class="badge badge-light p-2 "><small>{{clan?.tag}}</small></span></p>-->
-        <!--<p class="mb-2"><span class="badge badge-success p-2"><i-->
-          <!--class="fa fa-users"></i> Members: {{clan?.members}}</span></p>-->
-      <!--</div>-->
-        <!--<div class="col-12 col-md-8 col-lg-4 text-center">-->
-        <!--<ul class="list-inline mb-0">-->
-          <!--<li class="list-inline-item">-->
-            <!--<p><span class="badge badge-light p-2">-->
-          <!--<img src="../assets/imgs/trophy.png" alt="" class="icon">-->
-              <!--{{clan?.clanPoints}}-->
-        <!--</span></p>-->
-          <!--</li>-->
-          <!--<li class="list-inline-item">-->
-            <!--<p><span class="badge badge-secondary p-2">-->
-          <!--<img src="../assets/imgs/bbtrophy.png" alt="" class="icon">-->
-              <!--{{clan?.clanVersusPoints}}-->
-        <!--</span></p>-->
-          <!--</li>-->
-        <!--</ul>-->
-        <!--<ul class="list-inline mb-0">-->
-          <!--<li class="list-inline-item">-->
-            <!--<p><span class="badge badge-secondary p-2">-->
-          <!--<img src="../assets/imgs/win.png" alt="" class="icon">-->
-              <!--War Wins: {{clan?.warWins}}-->
-        <!--</span></p>-->
-          <!--</li>-->
-          <!--<li class="list-inline-item">-->
-            <!--<p><span class="badge badge-light p-2">-->
-          <!--<img src="../assets/imgs/wins.png" alt="" class="icon">-->
-             <!--War Win Streak: {{clan?.warWinStreak}}-->
-        <!--</span></p>-->
-          <!--</li>-->
+      <div class="col-12 col-md-4 col-lg-2 text-center">
+        <h5>{{clan?.name}}</h5>
+        <p class="mb-2">
+          <small><img src="../assets/imgs/CZ.png" alt="" class="icon-cz mr-2">Czech Republic</small>
+        </p>
+        <p class="mb-2"><span class="badge badge-light p-2 "><small>{{clan?.tag}}</small></span></p>
+        <p class="mb-2"><span class="badge badge-success p-2"><i
+          class="fa fa-users"></i> Members: {{clan?.members}}</span></p>
+        <p class="mb-2"><span class="badge badge-info p-2"><small><i
+          class="fa fa-trophy"></i> Trophies required: {{clan?.requiredTrophies}}</small></span></p>
+      </div>
+        <div class="col-12 col-md-8 col-lg-4 text-center">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <p><span class="badge badge-light p-2">
+          <img src="../assets/imgs/trophy.png" alt="" class="icon">
+            {{clan?.clanPoints}}
+        </span></p>
+          </li>
+          <li class="list-inline-item">
+            <p><span class="badge badge-secondary p-2">
+          <img src="../assets/imgs/bbtrophy.png" alt="" class="icon">
+              {{clan?.clanVersusPoints}}
+        </span></p>
+          </li>
+        </ul>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <p><span class="badge badge-secondary p-2">
+          <img src="../assets/imgs/win.png" alt="" class="icon">
+              War Wins: {{clan?.warWins}}
+        </span></p>
+          </li>
+          <li class="list-inline-item">
+            <p><span class="badge badge-light p-2">
+          <img src="../assets/imgs/wins.png" alt="" class="icon">
+             War Win Streak: {{clan?.warWinStreak}}
+        </span></p>
+          </li>
 
-        <!--</ul>-->
+        </ul>
+          <p class="text-center mb-0">Best of all times</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <p><span class="badge badge-light p-2">
+          <img src="../assets/imgs/trophy.png" alt="" class="icon">
+               {{clan?.bests.clanPoints.val}}
+        </span></p>
+            </li>
+            <li class="list-inline-item">
+              <p><span class="badge badge-secondary p-2">
+          <img src="../assets/imgs/wins.png" alt="" class="icon">
+             War Win Streak: {{clan?.bests.warWinStreak.val}}
+        </span></p>
+            </li>
 
-        <!--<p class="mb-2"><span class="badge badge-info p-2"><small><i-->
-          <!--class="fa fa-trophy"></i> Trophies required: {{clan?.requiredTrophies}}</small></span></p>-->
+          </ul>
 
-      <!--</div>-->
 
-    <!--</div>-->
 
-  <!--</div>-->
-  <!--<hr>-->
+      </div>
+
+    </div>
+
+  </div>
+  <hr>
   <div class="container text-center pb-2">
     <p class="mb-0">Copyright 2018 / All Rights Reserved / United Clan</p>
   </div>

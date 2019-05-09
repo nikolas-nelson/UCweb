@@ -4,7 +4,7 @@ import {Rule} from '../models/rule';
 import {HttpClient} from '@angular/common/http';
 import * as AOS from 'aos';
 import {VideosService} from '../services/videos.service';
-import {ClaninfoService} from '../services/claninfo.service';
+import {ClashstatsService} from '../services/clashstats.service';
 
 
 
@@ -23,7 +23,7 @@ export class IntroComponent implements OnInit {
   public clan: any;
 
   constructor(private http: HttpClient, private videosService: VideosService,
-              private firestoreService: FirestoreService, private clanService: ClaninfoService) {
+              private firestoreService: FirestoreService, private  clashStats: ClashstatsService) {
 
   }
 
@@ -33,13 +33,15 @@ export class IntroComponent implements OnInit {
         this.items = this.videos.items;
       });
 
-    this.clanService.getAllInfo().subscribe((clan) => {
-      this.clan = clan;
-    });
-
     this.firestoreService.getRules().subscribe(rules => {
       this.rules = rules;
     });
+
+    this.clashStats.getStats().subscribe( stats => {
+      this.clan = stats;
+      console.log(stats);
+    });
+
     AOS.init();
   }
 
