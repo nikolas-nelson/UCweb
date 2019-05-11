@@ -18,7 +18,6 @@ export class FooterComponent implements OnInit {
     // GET DATA FROM Clash Stats API
     this.clashStats.getStats().subscribe(stats => {
       this.clan = stats;
-      console.log(stats);
     });
 
     AOS.init();
