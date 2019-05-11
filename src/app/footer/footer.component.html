@@ -6,7 +6,7 @@
   <div class="container py-4 ">
     <div class="row">
       <div class="col-12 col-md-4 col-lg-2 text-center">
-        <img *ngIf="clan" [src]="clan?.badgeUrls.medium" alt="" class="img-fluid mb-2">
+        <img *ngIf="clan" [src]="clan?.badgeUrls.medium" alt="Badge icon" class="img-fluid mb-2">
       </div>
       <div class="col-12 col-md-8 col-lg-4 py-3 text-center">
         <p>
@@ -16,7 +16,7 @@
       <div class="col-12 col-md-4 col-lg-2 text-center">
         <h5>{{clan?.name}}</h5>
         <p class="mb-2">
-          <small><img src="../assets/imgs/CZ.png" alt="" class="icon-cz mr-2">Czech Republic</small>
+          <small><img src="../assets/imgs/CZ.png" alt="Czech flag" class="icon-cz mr-2">Czech Republic</small>
         </p>
         <p class="mb-2"><span class="badge badge-light p-2 "><small>{{clan?.tag}}</small></span></p>
         <p class="mb-2"><span class="badge badge-success p-2"><i
@@ -28,13 +28,13 @@
         <ul class="list-inline mb-0">
           <li class="list-inline-item">
             <p><span class="badge badge-light p-2">
-          <img src="../assets/imgs/trophy.png" alt="" class="icon">
+          <img src="../assets/imgs/trophy.png" alt="trophy icon" class="icon">
               {{clan?.clanPoints}}
         </span></p>
           </li>
           <li class="list-inline-item">
             <p><span class="badge badge-secondary p-2">
-          <img src="../assets/imgs/bbtrophy.png" alt="" class="icon">
+          <img src="../assets/imgs/bbtrophy.png" alt="trophy icon" class="icon">
               {{clan?.clanVersusPoints}}
         </span></p>
           </li>
@@ -42,13 +42,13 @@
         <ul class="list-inline mb-0">
           <li class="list-inline-item">
             <p><span class="badge badge-secondary p-2">
-          <img src="../assets/imgs/win.png" alt="" class="icon">
+          <img src="../assets/imgs/win.png" alt="win icon" class="icon">
               War Wins: {{clan?.warWins}}
         </span></p>
           </li>
           <li class="list-inline-item">
             <p><span class="badge badge-light p-2">
-          <img src="../assets/imgs/wins.png" alt="" class="icon">
+          <img src="../assets/imgs/wins.png" alt="wins icon" class="icon">
              War Win Streak: {{clan?.warWinStreak}}
         </span></p>
           </li>
@@ -58,13 +58,13 @@
         <ul class="list-inline mb-0">
           <li class="list-inline-item">
             <p><span class="badge badge-light p-2">
-          <img src="../assets/imgs/trophy.png" alt="" class="icon">
+          <img src="../assets/imgs/trophy.png" alt="Trophy icon" class="icon">
               {{clan?.bests.clanPoints.val}}
         </span></p>
           </li>
           <li class="list-inline-item">
             <p><span class="badge badge-secondary p-2">
-          <img src="../assets/imgs/wins.png" alt="" class="icon">
+          <img src="../assets/imgs/wins.png" alt="win icon" class="icon">
              War Win Streak: {{clan?.bests.warWinStreak.val}}
         </span></p>
           </li>
