@@ -41,11 +41,11 @@ Firebase DB and API for clan rules.
 YouTube API for videos.
 Game API for the clan informations.  
 
-##Testing 
+## Testing 
 
 The project was tested in chrome dev tools, in angular cli and AB testing on website. Also was tested by few clan mates from user perceptivity. 
 
-##How to run:
+## How to run:
 
 1. Clone project to your computer.
 2. Run `npm install` to install npm packages 
@@ -54,7 +54,7 @@ The project was tested in chrome dev tools, in angular cli and AB testing on web
 
 And you should see the webpage. 
 
-##Credits
+## Credits
 
 Angular documentation 
 
