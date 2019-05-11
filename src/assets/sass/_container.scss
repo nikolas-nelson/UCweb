@@ -1,6 +1,4 @@
-
-
-
+//  INTRO SECTION
 .intro {
   height: 80vh;
   position: relative;
@@ -8,21 +6,23 @@
   background-color: #DBDBDB;
   @media (min-width: 768px) {
     background: url("/assets/imgs/bg.jpg");
-    background-size:cover;
+    background-size: cover;
   }
 
   .over {
     position: relative;
     height: 100%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     @media (min-width: 768px) {
-      &:after{
-        content:'';
-        position:absolute;
-        left: -15vh; top:-15vh;
-        border-radius:100%;
-        width: 90vh; height: 90vh;
+      &:after {
+        content: '';
+        position: absolute;
+        left: -15vh;
+        top: -15vh;
+        border-radius: 100%;
+        width: 90vh;
+        height: 90vh;
         box-shadow: 0px 0px 0px 4000px #DBDBDB;
       }
     }
@@ -43,6 +43,7 @@
     transform: rotate(310deg);
     border-radius: 50px;
   }
+
   .king {
     position: absolute;
     z-index: 2;
@@ -54,6 +55,7 @@
     height: auto;
     width: 80vh;
   }
+
   .builder {
     position: absolute;
     z-index: 2;
@@ -76,6 +78,7 @@
       width: 80vh;
     }
   }
+
   .logo {
     position: absolute;
     z-index: 2;
@@ -90,6 +93,7 @@
 
 }
 
+// CLAN SECTION
 .uc {
   background-color: #DBDBDB;
   overflow: hidden;
@@ -97,37 +101,44 @@
     background: url("/assets/imgs/bg-02.jpg");
     background-size: cover;
   }
+
   .over-3 {
     position: relative;
     height: 100%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     @media (min-width: 768px) {
-      &:after{
+      &:after {
         z-index: 0;
-        content:'';
-        position:absolute;
-        right: -15vh; top: -15vh;
-        border-radius:100%;
-        width: 100vh; height: 100vh;
+        content: '';
+        position: absolute;
+        right: -15vh;
+        top: -15vh;
+        border-radius: 100%;
+        width: 100vh;
+        height: 100vh;
         box-shadow: 0px 0px 0px 4000px #DBDBDB;
       }
     }
 
   }
+
+  // IMG
   .img-fluid {
     position: relative;
     z-index: 10;
   }
 
+  // BOX STYLING
   .box {
     background-color: #860F0F;
     border-radius: 30px;
     position: relative;
     z-index: 2;
+
     &::before {
       //box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
       border-radius: 30px;
       right: 10px;
       top: 10px;
@@ -140,16 +151,13 @@
     }
   }
 
-  .builder-2 {
-
-  }
-
   h5 {
     color: #860F0F;
   }
- p {
-   color: #DBDBDB;
- }
+
+  p {
+    color: #DBDBDB;
+  }
 
   .builder-4 {
     position: absolute;
@@ -157,6 +165,8 @@
   }
 
 }
+
+// JOIN US SECTION
 .join {
   background-color: #DBDBDB;
   overflow: hidden;
@@ -169,22 +179,25 @@
     position: relative;
     height: 100%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     @media (min-width: 768px) {
-      &:after{
+      &:after {
         z-index: 0;
-        content:'';
-        position:absolute;
-        left: -15vh; top: -15vh;
-        border-radius:100%;
-        width: 90vh; height: 90vh;
+        content: '';
+        position: absolute;
+        left: -15vh;
+        top: -15vh;
+        border-radius: 100%;
+        width: 90vh;
+        height: 90vh;
         box-shadow: 0px 0px 0px 4000px #DBDBDB;
       }
     }
 
   }
+
   .img-fluid {
-   position: relative;
+    position: relative;
     z-index: 10;
   }
 
@@ -193,9 +206,10 @@
     border-radius: 30px;
     position: relative;
     z-index: 2;
+
     &::before {
       //box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
       border-radius: 30px;
       left: 10px;
       top: 10px;
@@ -219,6 +233,7 @@
 
   li {
     color: #DBDBDB;
+
     &::before {
       content: "\f00c";
       font-family: FontAwesome;
@@ -227,13 +242,16 @@
       padding-right: 5px;
     }
   }
+
   .btn-link {
     text-decoration: none;
     color: #DBDBDB;
+
     &:hover {
       color: #860F0F;
       text-decoration: none;
     }
+
     &::after {
       content: '';
       display: block;
@@ -241,12 +259,15 @@
       transform: scaleX(0);
       transition: transform 250ms ease-in-out;
     }
+
     &:hover::after {
       transform: scaleX(1);
     }
   }
 
 }
+
+// RULES SECTION
 
 .rules {
   background-color: #DBDBDB;
@@ -260,20 +281,23 @@
     position: relative;
     height: 100%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     @media (min-width: 768px) {
-      &:after{
+      &:after {
         z-index: 0;
-        content:'';
-        position:absolute;
-        right: -15vh; top: -15vh;
-        border-radius:100%;
-        width: 90vh; height: 90vh;
+        content: '';
+        position: absolute;
+        right: -15vh;
+        top: -15vh;
+        border-radius: 100%;
+        width: 90vh;
+        height: 90vh;
         box-shadow: 0px 0px 0px 4000px #DBDBDB;
       }
     }
 
   }
+
   .img-fluid {
     position: relative;
     z-index: 10;
@@ -287,6 +311,7 @@
 
   h5 {
     color: white;
+
     &::after {
       content: '';
       display: block;
@@ -295,18 +320,21 @@
       padding-top: 5px;
     }
   }
+
   p {
     color: #DBDBDB;
   }
+
   .box-rules {
     background: #3E3E3E;
     border-radius: 15px;
     padding: 20px;
     position: relative;
     z-index: 10;
+
     &:hover {
       transition: 0.5s;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
       margin-left: -10px;
       margin-right: -10px;
       margin-bottom: -10px;
@@ -317,16 +345,22 @@
 
 
 }
+
+// DISCORD SECTION
+
 .discord {
   background-color: #DBDBDB;
   overflow: hidden;
+
   h2, p {
     color: #3E3E3E;
   }
+
   .kod {
     color: #860F0F;
   }
 }
+
 .youtube {
   position: relative;
   overflow: hidden;
@@ -349,20 +383,23 @@
     position: relative;
     height: 100%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     @media (min-width: 768px) {
-      &:after{
+      &:after {
         z-index: 0;
-        content:'';
-        position:absolute;
-        right: -15vh; top: -15vh;
-        border-radius:100%;
-        width: 90vh; height: 90vh;
+        content: '';
+        position: absolute;
+        right: -15vh;
+        top: -15vh;
+        border-radius: 100%;
+        width: 90vh;
+        height: 90vh;
         box-shadow: 0px 0px 0px 4000px #DBDBDB;
       }
     }
 
   }
+
   .img-fluid {
     position: relative;
     z-index: 10;
@@ -374,18 +411,21 @@
     z-index: 10;
     color: #860F0F;
   }
+
   p {
     position: relative;
     z-index: 10;
     color: #3E3E3E;
   }
+
   .yt-box {
     position: relative;
     z-index: 10;
     background-color: #3E3E3E;
     border-radius: 15px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
+
   .img-ed {
     position: relative;
     z-index: 10;
@@ -397,13 +437,18 @@
 
   }
 }
+
+// FOOTER
+
 .footer {
   color: #DBDBDB;
   background-color: #3E3E3E;
- .icon {
-   width: 20px;
-   height: 20px;
- }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
   .icon-cz {
     width: 15px;
     height: 10px;

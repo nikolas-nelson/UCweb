@@ -15,6 +15,6 @@ export class FirestoreService {
   }
 
   getRules() {
-    return this.rules;
+    return this.rules; // GET DATA FROM Firebase
   }
 }

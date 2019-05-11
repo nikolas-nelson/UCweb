@@ -1,27 +1,69 @@
-# UCweb
+# UCweb (www.united-clan.cz)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project/website was made for my clan in Clash of Clans mobile game that I’m playing for 3 yers. 
 
-## Code scaffolding
+The goal for this project was create simple page which will be contain general information about our clan to preset to Clash of clans community or for potential players who want to join our clan. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Section what the website should have: 
 
-## Build
+1. Little introduction who we are.
+2. Info about recruiting 
+3. Our clan rules (can be changed any time)
+4. Information how to connect to our Discord 
+5. Videos from our YouTube channel (added automatically from our YT channel)
+6. Real time information from the game (displays information from the game API)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Because it’s a mobile game the website should be responsive as much as possible and simple to navigate. 
 
-## Running unit tests
+## Design
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Design was created in Adobe XD the exported pdf you can find in the design folder in the project. There was made some changes from the first design for better look on mobile phone screens. 
 
-## Running end-to-end tests
+## Technology 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+For this project was used Angular 6 for better folder structure and Api connection to end points. 
+Node.js was used to bypass CORS policy to fetch data from third party API. 
+Bootstrap 4 used to make website responsive across different screens  and speed up styling. 
+Ng2 animate on scroll was used for better user experience with interaction of the web page. 
+Font Awesome for icons.
+SASS for better organisation of css.
 
-## Further help
+## Deployment 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Project was deployed on my Linode server running on Ubuntu 14 using Nginx and Cerbot for SSL. To run node.js I’m using Pm2 and some times needs restart or start again because of some issue/changes with API or server itself. 
+
+## API 
+
+This project using three different API for data.
+Firebase DB and API for clan rules. 
+YouTube API for videos.
+Game API for the clan informations.  
+
+##Testing 
+
+The project was tested in chrome dev tools, in angular cli and AB testing on website. Also was tested by few clan mates from user perceptivity. 
+
+##How to run:
+
+1. Clone project to your computer.
+2. Run `npm install` to install npm packages 
+3. Run `ng start-proxi` to run project and node.js
+4. Open browser with http://localhost:4200/ 
+
+And you should see the webpage. 
+
+##Credits
+
+Angular documentation 
+
+Node documentation 
+
+Bootstrap documentation 
+
+GitHub for animate on scroll 
+
+Stack owerflow
+
+Linode documentation/forum 

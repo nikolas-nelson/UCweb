@@ -11,6 +11,7 @@ export class YTvideosPipe implements PipeTransform {
 
   }
 
+  // SECURITY BYPASS YT API
 
   transform(videoId: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(

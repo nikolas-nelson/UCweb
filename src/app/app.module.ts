@@ -6,7 +6,6 @@ import { NavigationComponent } from './navigation/navigation.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { IntroComponent } from './intro/intro.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { AOS } from 'aos';
 import { HttpClientModule} from '@angular/common/http';
 import {VideosService} from './services/videos.service';
 import { environment } from '../environments/environment';
@@ -16,8 +15,12 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import {FirestoreService} from './services/firestore.service';
 import { YTvideosPipe } from './ytvideos.pipe';
-import {ClaninfoService} from './services/claninfo.service';
 import {ClashstatsService} from './services/clashstats.service';
+import { FooterComponent } from './footer/footer.component';
+import { YoutubeComponent } from './youtube/youtube.component';
+import { DiscordComponent } from './discord/discord.component';
+import { ClanRulesComponent } from './clan-rules/clan-rules.component';
+import { JoinUsComponent } from './join-us/join-us.component';
 
 
 
@@ -27,6 +30,11 @@ import {ClashstatsService} from './services/clashstats.service';
     NavigationComponent,
     IntroComponent,
     YTvideosPipe,
+    FooterComponent,
+    YoutubeComponent,
+    DiscordComponent,
+    ClanRulesComponent,
+    JoinUsComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +49,6 @@ import {ClashstatsService} from './services/clashstats.service';
   providers: [
     VideosService,
     FirestoreService,
-    ClaninfoService,
     ClashstatsService
   ],
   bootstrap: [AppComponent]
